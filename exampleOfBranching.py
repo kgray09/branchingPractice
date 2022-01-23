@@ -6,7 +6,7 @@ Created on Thu Jan 13 21:57:15 2022
 @author: kimberleegray
 """
 # given a number of pennies < 100, 
-# fon sthe min number og coins to represent them
+# find the min number of coins to represent them
 
 #Example 81 cents => 81 pennies
 # 3 quarters, 1 nickle, 1 penny
