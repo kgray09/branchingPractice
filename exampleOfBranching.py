@@ -4,50 +4,53 @@
 Created on Thu Jan 13 21:57:15 2022
 
 @author: kimberleegray
-"""
-# given a number of pennies < 100, 
-# find the min number of coins to represent them
+userChange = int(input())
 
-#Example 81 cents => 81 pennies
-# 3 quarters, 1 nickle, 1 penny
+dollars = userChange // 100
+remainder1 = userChange % 100
 
-# step 1: read the amount gtom the user
-a = int(input("Enter the amount: "))
-# step 2: divide a by 25 to get the number of quaters and remainder
-Quarters = a // 25
-remainder = a % 25
-# step 3: divide remainder by 10 to get number of dimes and remainder 2
-dimes = remainder = remainder // 10 
-remainder2 = remainder % 10
-# step 4: divide remainder2 by five to get number of nickles and pennies
-Nickles = remainder2 // 5
-Pennies = remainder2 % 5
+quarters = remainder1 // 25
+remainder2 = remainder1 % 25
 
-if Quarters > 0:
-    if Quarters == 1:
-        print(Quarters, "Quarter")
+dimes = remainder2 // 10
+remainder3 = remainder2 % 10
+
+nickles = remainder3 // 5
+remainder4 = remainder3 % 5
+
+pennies = remainder4 // 1
+
+if userChange == 0:
+    print("No change")
+
+if dollars > 0:
+    if dollars == 1:
+        print(dollars, "Dollar")
     else:
-        print(Quarters, "Quarters")
+        print(dollars, "Dollars")
 
+if quarters > 0:
+    if quarters == 1:
+        print(quarters, "Quarter")
+    else:
+        print(quarters, "Quarters")
+        
 if dimes > 0:
     if dimes == 1:
         print(dimes, "Dime")
     else:
         print(dimes, "Dimes")
-
-if Nickles > 0:
-    if Nickles == 1:
-        print(Nickles, "Nickle")
+        
+if nickles > 0:
+    if nickles == 1:
+        print(nickles, "Nickel")
     else:
-        print(Nickles, "Nickles")
+        print(nickles, "Nickels")
 
-if Pennies > 0:
-    if Pennies == 1:
-        print(Pennies, "Penny")
+if pennies > 0:
+    if pennies == 1:
+        print(pennies, "Penny")
     else:
-        print(Pennies, "Pennies")
-
-
-
+        print(pennies, "Pennies")
 
 
