@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 13 21:57:15 2022
+# """
+# Created on Thu Jan 13 21:57:15 2022
 
-@author: kimberleegray
+# @author: kimberleegray
 userChange = int(input())
 
 dollars = userChange // 100
